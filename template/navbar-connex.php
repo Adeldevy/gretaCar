@@ -18,13 +18,10 @@
     </div>
 
 
-
     <ul class="nav navbar-nav navbar-right"><span class="collapse navbar-collapse">
-
-
         <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown"
-            aria-haspopup="true">Mon compte</a>
+          <a class="nav-link dropdown-toggle" href="" id="dropdown04" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">MonCompte</a>
 
           <div class="dropdown-menu" aria-labelledby="dropdown04">
 
@@ -41,3 +38,4 @@
   </nav>
 
   
+<!--/.Navbar -->

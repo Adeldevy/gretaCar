@@ -15,9 +15,7 @@
             
             <div class="col">
             <div class="input-group mb-3">  
-                     <div class="input-group-prepend">
-                                <span class="input-group-text">Nom</span>
-                            </div>
+                     
               <input class="form-control" placeholder="Nom" type="text" name="nom" title="Nom"
                 autocomplete="off" aria-label="Nom" required>
             </div>

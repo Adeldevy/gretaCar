@@ -1,7 +1,7 @@
 <?php
 
 require_once ('testmail.php') ;
-
+include("DbConfig.php");
 //recuperation des données saisies en html
 $Nom = $_POST["nom"];
 $Prenom = $_POST["prenom"];
@@ -15,18 +15,6 @@ $Motdepasse1 = $_POST["mdp1"];
 $Motdepasse2 = $_POST["mdp2"];
 
 
-echo "Nom : ".$Nom."<br/>";
-echo "Prenom : ".$Prenom."<br/>";
-echo "Adresse : ".$Adresse."<br/>";
-echo "Ville : ".$Ville."<br/>";
-echo "Codepostal : ".$Codepostal."<br/>";
-echo "Email : ".$Mail."<br/>";
-echo "Tel : ".$Tel."<br/>";
-echo "Nom_etab : ".$Nom_etab."<br/>";
-echo "Mdp1 : ".$Motdepasse1."<br/>";
-echo "Mdp2 : ".$Motdepasse2."<br/>";
-
-
 //test mot de passe identique
 if ($Motdepasse1==$Motdepasse2)
 {
@@ -35,11 +23,6 @@ if ($Motdepasse1==$Motdepasse2)
 $grain='8h!6./?£*oµ5%z+°ù²#|G5';
 $mdpcrypte = sha1(sha1($Motdepasse1).$grain);
 
-//parametre du srv bdd
-$servername = 'localhost';
-$dbname = 'covoit1'; // nom de base de bdd
-$user = 'root'; // utilisateur de la bdd
-$mdp = ''; // mot de passe vide
 
 try {
 

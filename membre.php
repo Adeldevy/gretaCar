@@ -9,7 +9,7 @@ session_start();
 
   <?php include("template/head.php"); ?>
   <?php include("template/navbar-connex.php"); ?>
-  <?php include("template/modal-contact.php"); ?>
+  
  <center>
   <div class="container marketing  " id="couleurtext"><br>
 <?php
@@ -133,7 +133,7 @@ session_start();
 
 
             <iframe width="100%" height="400px" frameborder="0" allowfullscreen
-              src="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_420876?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=true&embedControl=false&datalayersControl=null&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true&editinosmControl=false">
+              src="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_420876?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=true&embedControl=false&datalayersControl=null&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true&editinosmControl=false#9/45.7033/4.0347">
             </iframe>
             <p>
               <a href="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_420876">Voir en plein écran</a>
@@ -147,12 +147,7 @@ session_start();
     </div>
   </div>
 
-  <!-- <div class ="col" class="carte">
-      <iframe width="100%" height="400px" frameborder="0" allowfullscreen
-        src="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_420876?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=true&embedControl=false&datalayersControl=null&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true&editinosmControl=false">
-      </iframe>
-      <p>
-        <a href="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_420876">Voir en plein écran</a> -->
+ 
   </p>
   </div>
   </div>
@@ -160,7 +155,7 @@ session_start();
   </div>
 
 
-  <!-- Le corps -->
+
 
   <div class="container gris">
 
@@ -172,3 +167,76 @@ session_start();
   <!-- le footer merde mais je ne sais pas pourquoi il ne se met pas tout en bas-->
 
 <?php include("template/footer.php"); ?>
+
+<!--Modal contact-->
+<form method="POST" action="cont.php">
+  <div class="modal " id="contactModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            
+            <div class="col">
+            <div class="input-group mb-3">  
+                     
+              <input class="form-control" placeholder="Nom" type="text" name="nom" title="Nom"
+                autocomplete="off" aria-label="Nom" value="<?php echo $nom; ?>">
+            </div>
+         </div>
+
+            <div class="col">
+              <input class="form-control" placeholder="Prenom" type="text" name="prenom" title="Prenom"
+                autocomplete="off" aria-label="Prenom" value="<?php echo $prenom; ?>" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input class="form-control" placeholder="E-mail" type="text" name="email" title="" autocomplete="off"
+              value="<?php echo $mail; ?>">
+            </div>
+
+            <div class="col">
+              
+              
+               <input class="form-control" placeholder="Nom Etablissemnt" type="" name="nom établissement" title=""
+                autocomplete="off"
+              value="<?php echo $nom_etab; ?>">
+                
+         
+
+
+            
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="mes" for="Textarea1">Message :</label>
+              <textarea class="form-control" id="message" name="messages" rows="3"></textarea>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+    
+          <button type="submit" class="btn btn-dark">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
