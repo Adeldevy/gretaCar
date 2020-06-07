@@ -18,7 +18,7 @@
 
 				
 					<div class="adel">
-						<img src="logo/logo2.png" height="100px" alt="logo"></img>
+						<img src="logo/logo2.png" height="100px" alt="logo" ></img>
 					</div>
 					</div>
 

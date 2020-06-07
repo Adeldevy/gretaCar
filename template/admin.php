@@ -29,6 +29,7 @@ try {
 		     $_SESSION['code'] = $admin;
 
 header('Location: moderateur_profile.php');
+die();
 }
 
 catch (PDOException $erreur) {

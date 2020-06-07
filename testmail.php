@@ -1,5 +1,5 @@
 <?php
-
+include("DbConfig.php");
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,11 +10,7 @@
 $email = $_POST["email"];
 
 
-//parametre du srv bdd
-$servername = 'localhost';
-$dbname = 'covoit1'; // nom de base de bdd
-$user = 'covoit1'; // utilisateur de la bdd
-$pass = 'covoit1'; // mot de passe vide
+
 
 try {
 

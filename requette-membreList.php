@@ -1,8 +1,9 @@
 <?php
-
+include("DbConfig.php");
     try {
 
-    $bdd = new PDO('mysql:host=localhost;dbname=covoit1', 'root', '');
+
+    $bdd = new PDO("mysql:host=$servername;dbname=$dbname",$user,$pass);
 
         foreach($bdd->query('SELECT usr_nom, usr_prenom,usr_ville, usr_email, usr_id
         FROM user WHERE nom_etab="'. $nom_etab.'"') as $row)

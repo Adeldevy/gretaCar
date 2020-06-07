@@ -1,5 +1,5 @@
 <?php
-
+include("DbConfig.php");
 //recuperation des données saisies en html
 $Mail = $_POST["email"];
 $Motdepasse1 = $_POST["mdp1"];
@@ -7,13 +7,6 @@ $Motdepasse1 = $_POST["mdp1"];
 //cryptage mdp
 $grain='8h!6./?£*oµ5%z+°ù²#|G5';
 $mdpcrypte = sha1(sha1($Motdepasse1).$grain);
-
-//parametre du srv bdd
-$servername = 'localhost';
-$dbname = 'covoit1'; // nom de base de bdd
-$user = 'root'; // utilisateur de la bdd
-$pass = ''; // mot de passe vide
-
 
 try {
 

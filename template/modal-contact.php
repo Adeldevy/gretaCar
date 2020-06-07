@@ -1,7 +1,7 @@
 <!--Modal contact-->
 <form method="POST" action="cont.php">
-  <div class="modal" id="contactModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+  <div class="modal " id="contactModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Contact</h5>
@@ -12,13 +12,20 @@
 
         <div class="modal-body">
           <div class="row">
+            
             <div class="col">
-              <input class="form-control" placeholder="Nom" type="text" name="nom" title="adresse"
-                autocomplete="off" required>
+            <div class="input-group mb-3">  
+                     <div class="input-group-prepend">
+                                <span class="input-group-text">Nom</span>
+                            </div>
+              <input class="form-control" placeholder="Nom" type="text" name="nom" title="Nom"
+                autocomplete="off" aria-label="Nom" required>
             </div>
+         </div>
+
             <div class="col">
-              <input class="form-control" placeholder="Prenom" type="text" name="prenom" title="adresse"
-                autocomplete="off" required>
+              <input class="form-control" placeholder="Prenom" type="text" name="prenom" title="Prenom"
+                autocomplete="off" aria-label="Prenom" required>
             </div>
           </div>
 
@@ -57,3 +64,4 @@
     </div>
   </div>
 </form>
+

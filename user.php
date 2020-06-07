@@ -90,12 +90,6 @@ session_start();
     </form>
   </div>
 
-  
- 
-
-  
-
-
   <div class="container marketing">
 
 <h3> <?php echo'Bonjour ' .$_SESSION['prenom'] ;  ?> !</h3>
@@ -136,9 +130,6 @@ session_start();
       <p class="float-right"><a href="#">Back to top</a></p>
       <p>© 2019 Greta, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
-  
-  
-  
 	
 </body>
 </html> 

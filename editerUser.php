@@ -2,7 +2,7 @@
 
 session_start();
 require_once ('requette-editUser.php');?>
-
+ 
 <html>
 <!-- lien pourri boostarp à changer en version plus récente -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,11 +11,13 @@ require_once ('requette-editUser.php');?>
 
 
 <body>
-
+ 
+ 
    <div class="container">
-      <div class="row">
-         <h2>Votre profil</h2>
 
+      
+         <h2>Votre profil</h2><br>
+     <div class="row">
          <div class="col-md-6 ">
             <!-- taille de la boite -->
 

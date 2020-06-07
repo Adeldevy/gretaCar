@@ -1,9 +1,9 @@
 <?php
-
+include("DbConfig.php");
 
             try { 
 
-$bdd = new PDO('mysql:host=localhost;dbname=covoit1', 'root', '');
+$bdd = new PDO("mysql:host=$servername;dbname=$dbname",$user,$pass);
 
   
 

@@ -1,18 +1,12 @@
 <?php
-
+include("DbConfig.php");
 
 
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $mail = $_POST['email'];
-$centredeformation = $_POST['cf'];
+$centredeformation = $_POST['nom_etab'];
 $messages = $_POST['messages'];
-//Paramètre serveur
-$servername = 'localhost';
-$dbname = 'covoit1';//Nom de la base de données
-$user = 'covoit1';//Utilisateur de la BDD
-$pass = 'covoit1';//Mot de passe vide
-
 
 
 try {
@@ -29,7 +23,7 @@ try {
     $bddprepare->execute();
     echo "Insertion BDD réussie";
     $bdd = null; //Destruction de l'objet
-    header('location:index.html');
+    header('location:index.php');
 } catch (PDOException $erreur) {
     echo $erreur."--".$erreur->getMessage()."\n";
     die();

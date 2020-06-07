@@ -1,7 +1,8 @@
 <?php
+include("DbConfig.php");
 try { 
 
-$bdd = new PDO('mysql:host=localhost;dbname=covoit1', 'root', '');
+$bdd = new PDO("mysql:host=$servername;dbname=$dbname",$user,$pass);
 
   foreach($bdd->query('SELECT usr_nom, usr_prenom, usr_adresse, usr_ville, usr_codepostal, usr_email, usr_tel, nom_etab, usr_mdp1
    FROM user WHERE usr_nom =  "'.$_SESSION['nom'].'" AND usr_prenom  = "'
@@ -15,20 +16,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=covoit1', 'root', '');
       $mail = $row[5];
       $tel= $row[6];
       $nom_etab= $row[7];
-      $mdp= $row[8];
-           
-     //update champs Nom
-    
-     //// attention   !!!!!!!!!  au numéro de case $row   ///////////////////////////////////////////
-    /*
-      echo 'Nom : '.$nom. '</br>';
-      echo  'Prénom : ' .$prenom.'</br>';
-      echo  ' Adresse : ' .$adresse.'</br>';
-      echo  ' Ville : ' .$ville.'</br>';
-      echo  ' Codepostal : '.$adresse.'</br>';
-      echo  ' mail : '.$mail.'</br>';
-      echo  ' tel : '.$tel.'</br>';
-     */   
+      $mdp= $row[8];  
       
    }  
     
