@@ -104,9 +104,14 @@ select,input[type=text],[type=number],[type=mail][type=password]:focus {
 
                        </div>
                    </div>
-                   <button type="button" id="affichUp" class="btn-warning"> <a>Modifier mon profil</a></button>
-               </div>
+                   <button type="button" id="affichUp" class="btn-warning"> <a>Modifier mon profil</a></button><br>
+              <br>
+              <br>
+              <br>
+              <br>
 
+               </div>
+              
 
             <div class="col-md-6"id="modifier">
           

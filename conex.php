@@ -21,7 +21,7 @@ try {
     $prenom = $row[1];
     $email = $row[2];
 
-//header("location:inscr.html");
+
 }
 
 if (($nom !=null)&&($prenom !=null))
@@ -36,7 +36,7 @@ if (($nom !=null)&&($prenom !=null))
     header('location:membre.php');
 } else header('location:index.php');
 
-//echo 'bonjour '.$prenom.' '.$nom.'<br/>';
+
 $bdd = null;
 }
 
